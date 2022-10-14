@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Nunito-SemiBold";
-    src: url(//fonts/Nunito-SemiBold.ttf);
-    src: url(//fonts/Nunito-SemiBold.woff);
+    src: url(..//fonts/Nunito-SemiBold.ttf),
+         url(..//fonts/Nunito-SemiBold.woff);
     font-style: normal;
     font-weight: 600;
 }
@@ -90,9 +90,18 @@
     border: 3px solid rgb(255, 255, 255);
     border-radius: 50%;
     background-color: rgb(40 32 32);
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     z-index: -1;
+}
+.time__item:after {
+    content: ":";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
 }
 .time__item + .time__item {
     margin-left: 2em;
