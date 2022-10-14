@@ -8,17 +8,59 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кошерная еда из Израиля</title>
 </head>
 <body class="body">
     <header class="header">
-
+        <div class="wrapper">
+            <div class="header__inner">
+                <a href="#" class="logo__link">
+                    <img src="icon/logo.png" alt="Логотип" class="logo">
+                </a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Головна</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про Нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <div class="hero">
-        <video loop muted autoplay poster="/uploads/video-bg-alt.jpg" class="fullscreen-bg__video">
+        <video loop muted autoplay class="video-bg">
             <source src="media/hero-video.webm" type="video/webm">
         </video>
+        <div class="wrapper">
+            <div class="main__content">
+                <ul class="time">
+                    <li class="time__item">
+                        09 <span class="time__name">days</span>
+                    </li>
+                    <li class="time__item">
+                        03 <span class="time__name">hours</span>
+                    </li>
+                    <li class="time__item">
+                        12 <span class="time__name">min</span>
+                    </li>
+                    <li class="time__item">
+                        25 <span class="time__name">sec</span>
+                    </li>
+                </ul>
+                <h1 class="main__title">новые напитки</h1>
+                <p class="main__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam commodi aut laboriosam iusto aspernatur quo asperiores voluptates perspiciatis.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

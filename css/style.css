@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Nunito-SemiBold";
+    src: url(//fonts/Nunito-SemiBold.ttf);
+    src: url(//fonts/Nunito-SemiBold.woff);
+    font-style: normal;
+    font-weight: 600;
+}
+:root {
+    font-size: 16px;
+    --title-f-f: "Nunito-SemiBold";
+    --text-c: rgba(255, 255, 255, 0.7);
+}
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.logo__link {
+    display: block;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; 
+}
+.menu__item + .menu__item {
+    margin-left: 2em;
+}
+.menu__link {
+    text-decoration: none;
+    font-family: var(--title-f-f);
+    font-size: 1.5rem;
+    color: var(--text-c);
+}
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 3.5em;
+}
+.time__item {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: var(--title-f-f);
+    text-align: center;
+    position: relative;
+}
+.time__item:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(40 32 32);
+    width: 120px;
+    height: 120px;
+    z-index: -1;
+}
+.time__item + .time__item {
+    margin-left: 2em;
+}
+.time__name {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.3em;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+.main__title {
+    font-family: var(--title-f-f);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    color: rgb(255, 255, 255);
+}
+.main__text {
+    width: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var9(--title-f-f);
+    font-size: 1.2rem;
+    text-align: right;
+}
