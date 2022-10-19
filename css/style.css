@@ -96,7 +96,7 @@
     height: 100vh;
 }
 .main-content__inner {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,7 +110,7 @@
 }
 .time__item {
     color: rgb(255, 255, 255);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--title-f-f);
     text-align: center;
     position: relative;
@@ -133,7 +133,7 @@
     position: absolute;
     top: 50%;
     left: 190%;
-    transform: translate(-15%,-50%);
+    transform: translate(50%,-50%);
     font-size: 3rem;
     color: rgb(255, 255, 255);
 }
@@ -141,7 +141,7 @@
     display: none;
 }
 .time__item + .time__item {
-    margin-left: 2.5em;
+    margin-left: 3em;
 }
 .time__name {
     display: block;
@@ -153,14 +153,14 @@
 .main__title {
     font-family: var(--title-f-f);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5em;
     color: rgb(255, 255, 255);
 }
 .main__text {
     color: rgba(255, 255, 255, 0.7);
     font-family: var(--title-f-f);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 /* Меню с продуктами на главном экране */
 .product-menu {
