@@ -483,6 +483,7 @@
 /* Начало сео контейнера */
 .seo-container {
     padding: 4em 0 7em;
+    background-color: rgb(40, 8, 0);
 }
 .seo-container__items {
     display: flex;
@@ -504,5 +505,8 @@
     font-size: 3rem;
     margin-bottom: 1em;
     text-align: center;
+}
+.seo-container__text {
+    color: rgb(255, 255, 255);
 }
 /* Конец сео контейнера */
