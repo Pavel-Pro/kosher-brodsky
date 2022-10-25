@@ -127,19 +127,6 @@
     position: relative;
     z-index: 8;
 }
-.time__item:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    background-color: rgb(40 32 32);
-    width: 100px;
-    height: 100px;
-    z-index: 0;
-}
 .time__hour {
     position: relative;
     z-index: 5;
@@ -169,6 +156,23 @@
     margin-top: 0.3em;
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
+}
+.progress-ring {
+    stroke-dasharray: 282.743, 282.743;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.progress-ring__circle {
+    fill:rgb(40 32 32);
+    stroke-width: 4;
+    stroke: #ffffff;
+    transform-origin: center;
+    transform: rotate(-90deg);
 }
 .main__title {
     font-family: var(--title-f-f);
