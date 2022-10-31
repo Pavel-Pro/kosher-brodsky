@@ -70,3 +70,13 @@ var wow = new WOW(
     resetAnimation: true,     // reset animation on end (default is true)
   }
 );
+$('.category').scroolly( [
+    {
+        from: 'doc-top = el-top',
+        css: {
+            position: 'sticky',
+            top: '0px',
+            bottom: ''
+        }
+    }
+], $('.body'));
