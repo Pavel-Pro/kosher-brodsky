@@ -3,7 +3,13 @@ $('.category-card__inner').slick({
     slidesToShow: 1,
     slidesToShow: 4,
     autoplay: true,
-    autoplaySpeed: 1000
+    autoplaySpeed: 1000,
+    responsive: [{
+        breakpoint: 1235,
+        settings: {
+            slidesToShow: 3
+        }
+    }]
 });
 
 let current = Date.now();

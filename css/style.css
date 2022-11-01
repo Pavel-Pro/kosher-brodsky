@@ -5,6 +5,13 @@
     font-style: normal;
     font-weight: 600;
 }
+@font-face {
+    font-family: "Nunito-Regular";
+    src: url(..//fonts/Nunito-Regular.ttf),
+         url(..//fonts/Nunito-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+}
 :root {
     font-size: 16px;
     --title-f-f: "Nunito-SemiBold";
@@ -38,10 +45,12 @@
 }
 .nav {
     margin-left: auto;
+    flex-grow: 1;
+    margin-right: 1em;
 }
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style-type: none; 
 }
@@ -81,8 +90,8 @@
 .basket {
     width: 20px;
     height: 20px;
-    margin-left: 2em;
     cursor: pointer;
+    display: block;
 }
 /* Конец секции header */
 /* Главный экран */
@@ -543,6 +552,7 @@ product-submenu__link:hover {
 }
 .seo-container__text {
     color: rgb(255, 255, 255);
+    font-family:  "Nunito-Regular";
 }
 /* Конец сео контейнера */
 /* Секция футер */
@@ -623,3 +633,78 @@ product-submenu__link:hover {
     font-size: 0.8rem;
 }
 /* Конец секции футер */
+/* Адаптивная вёрстка */
+@media screen and (max-width: 1235px) {
+    .wrapper {
+        padding: 0 1em;
+        width: auto;
+    }
+    .main-content__inner {
+        width: 45%;
+    }
+    .product-menu__item + .product-menu__item {
+        margin-left: 1em;
+    }
+    .menu-icon__wrap {
+        width: 45px;
+        height: 45px;
+        border-radius: 25%;
+    }
+    .product-menu__icon {
+        width: 25px;
+    }
+    .product-menu__link {
+        font-size: 1rem;
+        width: 155px;
+    }
+    .product-submenu__item {
+        width: 155px;
+    }
+    .product-submenu__link {
+        font-size: 0.8rem;
+    }
+    .seo-container__text {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1175px) {
+    .main-content {
+        align-items: center;
+    }
+    .main-content__inner {
+        width: 55%;
+        align-items: center;
+    }
+    .product-menu__item + .product-menu__item {
+        margin-left: 0.5em;
+    }
+    .menu-icon__wrap {
+        width: 35px;
+        height: 35px;
+    }
+    .product-menu__link {
+        font-size: 1rem;
+        width: 140px;
+    }
+    .product-submenu__item {
+        width: 140px;
+    }
+    .category {
+        padding-top: 3em;
+    }
+    .title {
+        margin-bottom: 1.5em;
+    }
+    .category-card__inner {
+        padding-left: 8.5em;
+    }
+    .seo-container {
+        padding-top: 3em;
+    }
+    .footer__item + .footer__item {
+        margin-left: 1em;
+    }
+    .footer-menu__link {
+        font-size: 0.8rem;
+    }
+}
