@@ -1189,6 +1189,9 @@ product-submenu__link:hover {
     .product-menu__mobile .product-submenu__link {
         font-size: 0.5rem;
     }
+    .seo-container__text {
+        font-size: 0.6rem;
+    }
 }
 @media screen and (max-width: 500px) {
     .title {
