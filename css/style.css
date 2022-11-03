@@ -1152,7 +1152,10 @@ product-submenu__link:hover {
         display: none;
     }
     .product-menu__mobile {
-        padding-top: 4em;
+        padding-top: 2.5;
+    }
+    .close {
+        top: 25px;
     }
     .product-menu__mobile .product-menu__item:nth-child(n+4) {
         display: flex;
