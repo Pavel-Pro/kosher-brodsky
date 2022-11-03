@@ -445,6 +445,7 @@ product-submenu__link:hover {
     transition-property: opacity;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
+    outline: none;
 }
 .card__btn:before {
     content: "";
@@ -1149,6 +1150,9 @@ product-submenu__link:hover {
     }
     .product-menu__item:nth-child(n+4) {
         display: none;
+    }
+    .product-menu__mobile {
+        padding-top: 4em;
     }
     .product-menu__mobile .product-menu__item:nth-child(n+4) {
         display: flex;
