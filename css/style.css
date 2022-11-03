@@ -1222,7 +1222,7 @@ product-submenu__link:hover {
         margin-bottom: 5em;
     }
     .slick-prev, .slick-next {
-        top: 115%;
+        top: 105%;
     }
     .category-card__inner .slick-prev {
         left: 40%;
