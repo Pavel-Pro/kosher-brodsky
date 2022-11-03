@@ -2,8 +2,8 @@ $('.category-card__inner').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToShow: 4,
-    // autoplay: true,
-    // autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     responsive: [{
         breakpoint: 1235,
         settings: {
