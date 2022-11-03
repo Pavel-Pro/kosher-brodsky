@@ -2,14 +2,26 @@ $('.category-card__inner').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToShow: 4,
-    autoplay: true,
-    autoplaySpeed: 1000,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
     responsive: [{
         breakpoint: 1235,
         settings: {
             slidesToShow: 3
         }
-    }]
+    },
+    {   breakpoint: 685,
+        settings: {
+            slidesToShow: 2
+        }
+    },
+    {
+          breakpoint: 535,
+        settings: {
+            slidesToShow: 1
+        }  
+    }
+    ]
 });
 
 let current = Date.now();
@@ -86,3 +98,20 @@ $('.category').scroolly( [
         }
     }
 ], $('.body'));
+
+$('.product-menu__item:last-child').click(function() {
+    $('.body').css('position','fixed');
+    $('.header').hide();
+    $('.product-menu__mobile').css('display','flex');
+    $('.product-menu__item').clone().appendTo('.product-menu__mobile');
+});
+$('.close__item').click(function(){
+    $('.body').css('position','relative');
+    $('.header').show();
+    $('.product-menu__mobile').css('display','none');
+    $('.product-menu__mobile').find('.product-menu__item').remove();
+});
+$('.burger').click(function() {
+    $('.menu').toggleClass('active-menu');
+    $(this).toggleClass('open');
+});
