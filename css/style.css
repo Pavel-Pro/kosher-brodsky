@@ -1171,7 +1171,7 @@ product-submenu__link:hover {
     }
     .product-menu__mobile {
         padding-left: 0.5em;
-        padding-top: 3em;
+        padding-bottom: 5em;
         overflow: scroll;
         height: auto;
     }
