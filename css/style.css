@@ -1171,6 +1171,8 @@ product-submenu__link:hover {
     }
     .product-menu__mobile {
         padding-left: 0.5em;
+        padding-top: 3em;
+        overflow: scroll;
     }
     .close {
         position: absolute;
