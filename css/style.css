@@ -1173,7 +1173,7 @@ product-submenu__link:hover {
         padding-left: 0.5em;
         padding-bottom: 5em;
         overflow: scroll;
-        height: auto;
+        height: 100%;
     }
     .close {
         position: absolute;
