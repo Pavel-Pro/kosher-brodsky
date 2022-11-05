@@ -102,13 +102,13 @@ $('.category').scroolly( [
 $('.product-menu__item:last-child').click(function() {
     $('.body').css('position','fixed');
     $('.header').hide();
-    $('.product-menu__mobile').css('display','flex');
+    $('.menu-mobile').css('display','flex');
     $('.product-menu__item').clone().appendTo('.product-menu__mobile');
 });
 $('.close__item').click(function(){
     $('.body').css('position','relative');
     $('.header').show();
-    $('.product-menu__mobile').css('display','none');
+    $('.menu-mobile').css('display','none');
     $('.product-menu__mobile').find('.product-menu__item').remove();
 });
 $('.burger').click(function() {
