@@ -676,8 +676,15 @@ product-submenu__link:hover {
     .product-submenu__link {
         font-size: 0.8rem;
     }
+    .seo-container {
+        padding-bottom: 3em;
+        height: 100%;
+    }
     .seo-container__text {
         font-size: 0.9rem;
+    }
+    .footer {
+        height: 100%;
     }
 }
 @media screen and (max-width: 1175px) {
@@ -1194,7 +1201,7 @@ product-submenu__link:hover {
         font-size: 1.2rem;
     }
     .main__title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .product-menu {
         bottom: 15%;
@@ -1281,9 +1288,6 @@ product-submenu__link:hover {
     }
     .card__text {
         margin-bottom: 4em;
-    }
-    .slick-prev, .slick-next {
-        top: 105%;
     }
     .category-card__inner .slick-prev {
         left: 40%;
