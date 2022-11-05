@@ -564,6 +564,9 @@ product-submenu__link:hover {
     color: rgb(255, 255, 255);
     font-family:  "Nunito-Regular";
 }
+.text-more {
+    display: none;
+}
 /* Конец сео контейнера */
 /* Секция футер */
 .footer {
@@ -754,10 +757,23 @@ product-submenu__link:hover {
         background-color: rgb(26, 11, 7);
         z-index: 40;
     }
+    .menu-mobile:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 40%;
+        filter: blur(80px);
+        background-color: rgb(103, 18, 15);
+        border-radius: 50%;
+        z-index: -1;
+    }
     .product-menu__mobile {
         display: flex;
         flex-direction: column;
-        height: 470px;
+        height: 500px;
         width: inherit;
         padding-left: 1em;
         overflow-y: auto;
@@ -783,25 +799,36 @@ product-submenu__link:hover {
     .close__item-bottom {
         transform: rotate(-45deg)translate(0,1px);
     }
-    .product-menu__mobile:before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 50%;
-        height: 40%;
-        filter: blur(200px);
-        background-color: rgb(103, 18, 15);
-        border-radius: 50%;
-        z-index: -1;
-    }
     .product-menu__mobile .product-menu__item {
         width: 200px;
         align-items: center;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 5px;
-        height: 35px;
+        height: 40px;
+        padding-right: 5px;
+    }
+    .product-menu__mobile .product-menu__item:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%,-50%);
+        width: 0;
+        height: 0;
+        border: 5px solid rgb(0 0 0 / 0%);
+        border-right: 5px solid rgb(239, 62, 51);
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .product-menu__mobile .product-menu__item:hover:before  {
+        transform: rotate(180deg);
+        transform-origin: 5px 2px;
+    }
+    .product-menu__mobile .product-menu__item:first-child:before {
+        display: none;
+    }
+    .product-menu__mobile .product-menu__item:nth-child(n+12):before {
+        display: none;
     }
     .product-menu__mobile .product-menu__item:hover .menu-icon__wrap {
         background-color: transparent;
@@ -911,8 +938,17 @@ product-submenu__link:hover {
     .seo-container__text {
         font-size: 0.8rem;
     }
+    .text-more {
+        display: inline-block;
+        color: rgb(239, 62, 51);
+        margin-left: 0.5em;
+        font-weight: 700;
+    }
+    .seo-container__text:nth-child(n+3) {
+        display: none;
+    }
     .footer {
-        height: 19vh;
+        height: 100%;
     }
     .footer__item + .footer__item {
         margin-left: 0;
@@ -948,19 +984,15 @@ product-submenu__link:hover {
         justify-content: flex-end;
     }
     .menu {
-        /* display: none; */
+        display: none;
         position: absolute;
         flex-direction: column;
-        align-items: flex-start;
         width: 35%;
-        top: 80%;
+        top: 70%;
         right: 0;
-        transform: translate(100%,0);
+        transform: translate(0,0);
         background-color: rgb(26, 11, 7);
         transition: 0.4s;
-    }
-    .active-menu {
-        transform: translate(0,0);
     }
     .menu__item {
         position: relative;
@@ -1169,6 +1201,7 @@ product-submenu__link:hover {
     }
     .product-menu__mobile {
         padding-left: 0.5em;
+        width: 480px;
     }
     .product-menu__mobile .product-menu__item {
         width: 170px;
@@ -1217,17 +1250,21 @@ product-submenu__link:hover {
 }
 @media screen and (max-width: 500px) {
     .title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
     }
     .product-menu__mobile .product-submenu__item {
         width: 140px;
     }
     .seo-contain__title {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .category-card {
-        padding: 2em 1.5em 3em;
+        padding: 1.5em 1em 2em;
         text-align: center;
+    }
+    .card__number {
+        margin-bottom: 2em;
     }
     .card__number:after {
         left: 50%;
@@ -1240,7 +1277,7 @@ product-submenu__link:hover {
         margin-bottom: 1em;
     }
     .card__text {
-        margin-bottom: 5em;
+        margin-bottom: 4em;
     }
     .slick-prev, .slick-next {
         top: 105%;

@@ -112,6 +112,10 @@ $('.close__item').click(function(){
     $('.product-menu__mobile').find('.product-menu__item').remove();
 });
 $('.burger').click(function() {
-    $('.menu').toggleClass('active-menu');
+    $('.menu').slideToggle(300);
     $(this).toggleClass('open');
+});
+$('.text-more').click(function() {
+    $('.text-more').hide();
+    $('.seo-container__text:nth-child(n+3)').slideDown('500');
 });
