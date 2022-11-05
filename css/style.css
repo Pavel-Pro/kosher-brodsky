@@ -942,18 +942,19 @@ product-submenu__link:hover {
         justify-content: flex-end;
     }
     .menu {
-        display: none;
+        /* display: none; */
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
-        width: 25%;
+        width: 35%;
         top: 80%;
         right: 0;
-        transform: translate(0,0);
+        transform: translate(100%,0);
         background-color: rgb(26, 11, 7);
+        transition: 0.4s;
     }
     .active-menu {
-        display: flex;
+        transform: translate(0,0);
     }
     .menu__item {
         position: relative;
@@ -1122,8 +1123,17 @@ product-submenu__link:hover {
     }
 }
 @media screen and (max-width: 685px) {
+    .hero {
+        background-image: url(../media/main__bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .video-bg {
+        display: none;
+    }
     .menu {
-        width: 40%;
+        width: 50%;
     }
     .progress-ring {
         display: none;
@@ -1152,7 +1162,15 @@ product-submenu__link:hover {
         display: none;
     }
     .product-menu__mobile {
-        padding-top: 2.5;
+        padding-left: 0.5em;
+        padding-bottom: 5em;
+        overflow: auto;
+        height: 100%;
+    }
+    .product-menu__mobile .product-menu__item {
+        width: 170px;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
     .close {
         top: 25px;
@@ -1169,12 +1187,6 @@ product-submenu__link:hover {
     .main__text {
         font-size: 0.8rem;
     }
-    .product-menu__mobile {
-        padding-left: 0.5em;
-        padding-bottom: 5em;
-        overflow: scroll;
-        height: 100%;
-    }
     .close {
         position: absolute;
         top: 5%;
@@ -1186,9 +1198,6 @@ product-submenu__link:hover {
     }
     .product-menu__mobile .product-menu__link {
         font-size: 0.7rem;
-    }
-    .product-menu__mobile .product-menu__item {
-        width: 170px;
     }
     .submenu__item {
         width: 150px;
